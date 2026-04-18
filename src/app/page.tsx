@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { inter } from "./layout";
 import Link from "next/link";
-import lightningImage from "../../public/images/lightning-image.png"
+import GearLoader from "../components/GearLoader"
 
 export default function Home() {
   return (
@@ -18,14 +18,8 @@ export default function Home() {
           Alex Cortez
         </h1>
         <main className="flex flex-col justify-center w-full max-w-3xl items-center py-32 px-16 sm:items-start">
-          <div className="flex justify-center w-full">
-            <Image
-              src={lightningImage}
-              alt="flash"
-              width={200}
-              height={200}
-              className="animate-flash"
-            />
+          <div className="flex flex-col justify-center w-full">
+            <GearLoader />
             <Link href="/projects">
               <button
                 className="flex h-12 w-full items-center justify-center rounded-full border border-solid px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px] cursor-pointer"
