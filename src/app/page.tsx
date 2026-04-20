@@ -6,7 +6,7 @@ import GithubIcon from "../../public/images/github.svg";
 
 export default function Home() {
   return (
-    <div className="bg-cyan-400/10 backdrop-blur-xl border border-white/20 shadow-xl min-h-screen">
+    <div className="bg-background backdrop-blur-xl border border-white/20 shadow-xl min-h-screen">
       <nav className="p-1 flex justify-end">
         <Link href="/blog">
           <button className="p-3 cursor-pointer">
@@ -29,15 +29,15 @@ export default function Home() {
             <div className="flex justify-center p-5">
               <Link href="/projects">
                 <button
-                  className="flex h-12 w-full items-center justify-center rounded-full border border-solid px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] cursor-pointer"
+                  className="bg-accent flex h-12 w-full items-center justify-center rounded-full px-5 cursor-pointer"
                 >
                   Projects
                 </button>
               </Link>
               <Link href="/">
                 <Image
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                   src={GithubIcon}
                   alt="Github icon"
                   className="w-full h-full object-contain cursor-pointer"
@@ -51,4 +51,5 @@ export default function Home() {
   );
 }
 
-// Center projects button
+// Fix Github icon logo
+// Add LinkedIn
