@@ -13,6 +13,7 @@
   --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-sm: 600px;
 }
 
 @media (prefers-color-scheme: dark) {
