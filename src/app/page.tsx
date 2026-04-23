@@ -4,12 +4,13 @@ import Link from "next/link";
 import GearLoader from "../components/GearLoader";
 import GithubIcon from "../../public/images/github.svg";
 import LinkedIcon from "../../public/images/linkedin.svg";
+import About from "../sections/about/about";
 
 export default function Home() {
   return (
     <div className="bg-background backdrop-blur-xl border border-white/20 shadow-xl min-h-screen">
-      <nav className="p-1 flex justify-around">
-        <div className="flex font-semibold p-3 gap-2">
+      <nav className="p-1 flex justify-between">
+        <div className="flex font-semibold p-3 gap-2 m-3">
           <h3>
             Alex
           </h3>
@@ -17,14 +18,21 @@ export default function Home() {
             Cortez
           </h3>
         </div>
-        <Link href="/blog">
-          <button className="p-3 cursor-pointer">
-            Blog
-          </button>
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link href="#about">
+            <button className="">
+              About
+            </button>
+          </Link>
+          <Link href="/blog">
+            <button className="p-3 cursor-pointer">
+              Blog
+            </button>
+          </Link>
+        </div>
       </nav>
-      <div className="flex flex-1 items-center justify-center gap-2">
-        <h1 className="flex items-center justify-center gap-2 text-3xl font-semibold tracking-tight">
+      <div className="flex flex-1 items-center justify-center gap-2 p-5">
+        <h1 className="flex items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
           <span>Alex</span>
           <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
             Cortez
@@ -38,7 +46,7 @@ export default function Home() {
             <div className="flex justify-center items-center gap-4 p-5 max-[600px]:flex-col">
               <Link href="/projects">
                 <button
-                  className="bg-accent flex h-12 w-full items-center justify-center rounded-full px-5 cursor-pointer hover:bg-gray"
+                  className="bg-accent flex h-12 w-full items-center justify-center rounded-full px-5 cursor-pointer hover:bg-violet-600"
                 >
                   Projects
                 </button>
@@ -68,9 +76,10 @@ export default function Home() {
             </div>
           </div>
         </main>
+        <About />
       </div>
     </div>
   );
 }
 
-// 
+// Fill out about me section
