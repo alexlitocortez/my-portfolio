@@ -20,12 +20,12 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-6">
           <Link href="#about">
-            <button className="">
+            <button className="cursor-pointer hover:text-gray-500">
               About
             </button>
           </Link>
           <Link href="/blog">
-            <button className="p-3 cursor-pointer">
+            <button className="p-3 cursor-pointer hover:text-gray-500">
               Blog
             </button>
           </Link>
@@ -82,4 +82,7 @@ export default function Home() {
   );
 }
 
-// Fill out about me section
+// Add links to Github
+// Add links to LinkedIn
+// Adjust text size for "Alex" "Cortez" near nav when it goes mobile
+// Add hover effect to navbar text
