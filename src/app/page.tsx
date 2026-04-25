@@ -51,7 +51,7 @@ export default function Home() {
                   Projects
                 </button>
               </Link>
-              <Link href="/">
+              <Link href="https://github.com/alexlitocortez">
                 <div className="h-12 w-12 flex items-center justify-center bg-secondary rounded-full">
                   <Image
                     width={5}
@@ -62,7 +62,7 @@ export default function Home() {
                   />
                 </div>
               </Link>
-              <Link href="/">
+              <Link href="https://www.linkedin.com/in/alexlitocortez/">
                 <div className="h-13 w-13 flex items-center justify-center bg-secondary rounded-full">
                   <Image
                     width={5}
