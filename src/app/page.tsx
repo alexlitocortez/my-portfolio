@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </nav>
       <div className="flex flex-1 items-center justify-center gap-2 p-5">
-        <h1 className="flex items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
+        <h1 className="flex flex-col sm:flex-row items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
           <span>Alex</span>
           <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
             Cortez
@@ -82,7 +82,5 @@ export default function Home() {
   );
 }
 
-// Add links to Github
-// Add links to LinkedIn
+
 // Adjust text size for "Alex" "Cortez" near nav when it goes mobile
-// Add hover effect to navbar text
