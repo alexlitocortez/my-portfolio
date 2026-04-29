@@ -9,15 +9,7 @@ import About from "../sections/about/about";
 export default function Home() {
   return (
     <div className="bg-background backdrop-blur-xl border border-white/20 shadow-xl min-h-screen">
-      <nav className="p-1 flex justify-between">
-        <div className="flex font-semibold p-3 gap-2 m-3">
-          <h3>
-            Alex
-          </h3>
-          <h3 className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
-            Cortez
-          </h3>
-        </div>
+      <nav className="p-1 flex justify-end">
         <div className="flex items-center gap-6">
           <Link href="#about">
             <button className="cursor-pointer hover:text-gray-500">
@@ -32,12 +24,15 @@ export default function Home() {
         </div>
       </nav>
       <div className="flex flex-1 items-center justify-center gap-2 p-5">
-        <h1 className="flex flex-col sm:flex-row items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
-          <span>Alex</span>
-          <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
-            Cortez
-          </span>
-        </h1>
+        <div className="p-4 rounded-xl outline-solid">
+          <h1 className="flex flex-col sm:flex-row items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
+            <span>Alex</span>
+            <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
+              Cortez
+            </span>
+          </h1>
+        </div>
+
       </div>
       <div className="flex flex-col flex-1 items-center justify-center font-sans shadow-xl rounded-2xl p-8">
         <main className="flex flex-col justify-center w-full max-w-3xl items-center py-32 px-16 sm:items-start">
