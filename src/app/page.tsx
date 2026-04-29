@@ -76,11 +76,14 @@ export default function Home() {
             </div>
           </div>
         </main>
-        <About />
       </div>
+      <About />
     </div>
   );
 }
 
 
 // Adjust text size for "Alex" "Cortez" near nav when it goes mobile
+// Make skills section
+// Make experience section
+// Work on first blog
