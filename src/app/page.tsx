@@ -5,6 +5,7 @@ import GearLoader from "../components/GearLoader";
 import GithubIcon from "../../public/images/github.svg";
 import LinkedIcon from "../../public/images/linkedin.svg";
 import About from "../sections/about/about";
+import Think from "../sections/think/think";
 
 export default function Home() {
   return (
@@ -73,12 +74,13 @@ export default function Home() {
         </main>
       </div>
       <About />
+      <Think />
     </div>
   );
 }
 
-
-// Adjust text size for "Alex" "Cortez" near nav when it goes mobile
-// Make skills section
+// Add "How I Think" section
 // Make experience section
+// Make skills section
+// Add projects to projects page
 // Work on first blog
