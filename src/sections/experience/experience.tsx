@@ -1,7 +1,59 @@
 import React from 'react'
 
+const experiences = [
+    {
+        title: "Software Engineer",
+        company: "Zoox",
+        date: "2024 – Present",
+        description:
+            "Worked on mission control systems, improving real-time monitoring and system reliability.",
+    },
+    {
+        title: "Full Stack Developer",
+        company: "Personal Projects",
+        date: "2023 – 2024",
+        description:
+            "Built full-stack apps using Next.js, FastAPI, and MongoDB.",
+    },
+    {
+        title: "Started Coding",
+        company: "Self-taught",
+        date: "2023",
+        description:
+            "Learned programming fundamentals and began building projects from scratch.",
+    },
+];
+
 export default function experience() {
     return (
-        <div>experience</div>
+        <section className="w-full max-w-4xl mx-auto px-6 py-20">
+            <h2 className="text-2xl font-semibold text-accent mb-10">
+                Experience
+            </h2>
+
+            <div className="relative border-l border-white/20">
+                {experiences.map((item, index) => (
+                    <div key={index} className="mb-10 ml-6">
+
+                        {/* Dot */}
+                        <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
+                        </span>
+
+                        {/* Card */}
+                        <div className="bg-secondary/50 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-xl transition">
+                            <h3 className="text-lg font-semibold">
+                                {item.title} · {item.company}
+                            </h3>
+                            <time className="block text-sm text-white/50 mb-2">
+                                {item.date}
+                            </time>
+                            <p className="text-white/70">
+                                {item.description}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }

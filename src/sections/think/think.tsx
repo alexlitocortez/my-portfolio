@@ -8,7 +8,9 @@ export default function think() {
                     How I Think
                 </h2>
                 <div className='flex w-full gap-8 max-[600px]:flex-col items-center'>
-
+                    <p className="font-satoshi text-gray-500">
+                        The most critical part when trying to program is debugging.
+                    </p>
                 </div>
             </div>
         </section>
