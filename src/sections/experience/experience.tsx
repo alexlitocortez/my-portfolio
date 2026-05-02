@@ -33,11 +33,15 @@ export default function experience() {
 
             <div className="relative border-l border-white/20">
                 {experiences.map((item, index) => (
-                    <div key={index} className="mb-10 ml-6">
-
+                    <div key={index} className="mb-10 ml-6 group relative">
                         {/* Dot */}
-                        <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
-                        </span>
+                        <span
+                            className="absolute left-0 -translate-x-9 flex h-6 w-6 items-center justify-center rounded-full
+                            bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
+                            transition-all duration-300
+                            group-hover:scale-110
+                            group-hover:shadow-[0_0_20px_rgba(139,92,246,0.8)]"
+                        />
 
                         {/* Card */}
                         <div className="bg-secondary/50 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-xl transition">
