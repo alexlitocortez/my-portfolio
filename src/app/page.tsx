@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <div className="bg-background backdrop-blur-xl border border-white/20 shadow-xl min-h-screen">
       <nav className="p-1 flex justify-between">
-        <div>
+        {/* <div>
           <div className="p-3">
             <GearLoader />
           </div>
-        </div>
+        </div> */}
         <div className="flex items-center gap-6">
           <Link href="#about">
             <button className="cursor-pointer hover:text-gray-500">
@@ -30,7 +30,19 @@ export default function Home() {
           </Link>
         </div>
       </nav>
-      <div className="flex flex-1 items-center justify-center gap-2 p-5">
+      <div className="relative flex flex-1 items-center justify-center gap-2 p-5 overflow-hidden">
+        {/* Subtle grid */}
+        <div
+          className="absolute inset-0 -z-10 opacity-20
+          bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),
+          linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)]
+          bg-[size:36px_36px]"
+        />
+        {/* Fade edges */}
+        <div
+          className="absolute inset-0 -z-10
+          [mask-image:radial-gradient(ellipse_at_center,white,transparent)]"
+        />
         <h1 className="flex flex-col sm:flex-row items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
           <span>Alex</span>
           <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
@@ -82,6 +94,7 @@ export default function Home() {
 }
 
 // Edit experience section
-// Make skills section
+// Add header background to header
+// Why does experience add random grey block in front of cards
 // Add projects to projects page
 // Work on first blog

@@ -27,9 +27,12 @@ const experiences = [
 export default function experience() {
     return (
         <section className="w-full max-w-4xl mx-auto px-6 py-20">
-            <h2 className="text-2xl font-semibold text-accent mb-10">
-                Experience
-            </h2>
+            <div className='flex items-center justify-center'>
+                <h2 className="text-2xl font-semibold text-accent mb-10">
+                    Experience
+                </h2>
+            </div>
+
 
             <div className="relative border-l border-white/20">
                 {experiences.map((item, index) => (
