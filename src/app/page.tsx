@@ -11,20 +11,15 @@ import Experience from "../sections/experience/experience";
 export default function Home() {
   return (
     <div className="bg-background backdrop-blur-xl border border-white/20 shadow-xl min-h-screen">
-      <nav className="p-1 flex justify-between">
-        {/* <div>
-          <div className="p-3">
-            <GearLoader />
-          </div>
-        </div> */}
-        <div className="flex items-center gap-6">
+      <nav className="p-1 flex justify-end max-[600px]:justify-center">
+        <div className="flex justify-end items-center gap-6 p-3">
           <Link href="#about">
-            <button className="cursor-pointer hover:text-gray-500">
+            <button className="cursor-pointer hover:text-gray-500 px-4 py-2 rounded-full border">
               About
             </button>
           </Link>
           <Link href="/blog">
-            <button className="p-3 cursor-pointer hover:text-gray-500">
+            <button className="cursor-pointer hover:text-gray-500 px-4 py-2 rounded-full border">
               Blog
             </button>
           </Link>
@@ -93,8 +88,8 @@ export default function Home() {
   );
 }
 
-// Edit experience section
 // Add header background to header
+// Fix navbar section
 // Why does experience add random grey block in front of cards
 // Add projects to projects page
 // Work on first blog

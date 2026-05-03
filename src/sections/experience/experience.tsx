@@ -2,23 +2,23 @@ import React from 'react'
 
 const experiences = [
     {
-        title: "Software Engineer",
+        title: "Mission Control Associate",
         company: "Zoox",
-        date: "2024 – Present",
+        date: "2025 – Present",
         description:
-            "Worked on mission control systems, improving real-time monitoring and system reliability.",
+            "Real-time monitoring robots and troubleshooting while the robots are on mission.",
     },
     {
-        title: "Full Stack Developer",
-        company: "Personal Projects",
-        date: "2023 – 2024",
+        title: "Software Engineer",
+        company: "Fractal.ai",
+        date: "2022 – 2024",
         description:
-            "Built full-stack apps using Next.js, FastAPI, and MongoDB.",
+            "Built full-stack apps using React, FastAPI, and SQL.",
     },
     {
         title: "Started Coding",
         company: "Self-taught",
-        date: "2023",
+        date: "2020",
         description:
             "Learned programming fundamentals and began building projects from scratch.",
     },
