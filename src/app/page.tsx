@@ -7,6 +7,7 @@ import LinkedIcon from "../../public/images/linkedin.svg";
 import About from "../sections/about/about";
 import Think from "../sections/think/think";
 import Experience from "../sections/experience/experience";
+import TechGrid from "../../public/images/tech-grid.jpg";
 
 export default function Home() {
   return (
@@ -14,31 +15,29 @@ export default function Home() {
       <nav className="p-1 flex justify-end max-[600px]:justify-center">
         <div className="flex justify-end items-center gap-6 p-3">
           <Link href="#about">
-            <button className="cursor-pointer hover:text-gray-500 px-4 py-2 rounded-full border">
+            <button className="cursor-pointer hover:text-gray-500 px-4 py-2">
               About
             </button>
           </Link>
           <Link href="/blog">
-            <button className="cursor-pointer hover:text-gray-500 px-4 py-2 rounded-full border">
+            <button className="cursor-pointer hover:text-gray-500 px-4 py-2">
               Blog
+            </button>
+          </Link>
+          <Link href="/projects">
+            <button className="cursor-pointer hover:text-gray-500 px-4 py-2">
+              Projects
             </button>
           </Link>
         </div>
       </nav>
-      <div className="relative flex flex-1 items-center justify-center gap-2 p-5 overflow-hidden">
+      <div className="relative flex flex-1 items-center justify-center gap-2 py-32 px-6 pt-16 overflow-hidden">
         {/* Subtle grid */}
-        <div
-          className="absolute inset-0 -z-10 opacity-20
-          bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),
-          linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)]
-          bg-[size:36px_36px]"
+        <div className="absolute inset-0 z-0
+          bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.2),transparent_60%)]"
         />
-        {/* Fade edges */}
-        <div
-          className="absolute inset-0 -z-10
-          [mask-image:radial-gradient(ellipse_at_center,white,transparent)]"
-        />
-        <h1 className="flex flex-col sm:flex-row items-center justify-center gap-2 text-6xl font-semibold tracking-tight">
+
+        <h1 className="relative z-10 text-6xl flex flex-col sm:flex-row items-center justify-center gap-2 font-semibold tracking-tight">
           <span>Alex</span>
           <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">
             Cortez
@@ -89,7 +88,6 @@ export default function Home() {
 }
 
 // Add header background to header
-// Fix navbar section
 // Why does experience add random grey block in front of cards
 // Add projects to projects page
 // Work on first blog
