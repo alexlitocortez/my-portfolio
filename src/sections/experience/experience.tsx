@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react'
+import { motion } from "framer-motion";
 
 const experiences = [
     {
@@ -27,40 +30,47 @@ const experiences = [
 export default function experience() {
     return (
         <section className="w-full max-w-4xl mx-auto px-6 py-20">
-            <div className='flex items-center justify-center'>
-                <h2 className="text-2xl font-semibold text-accent mb-10">
-                    Experience
-                </h2>
-            </div>
+            <motion.section
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+            >
+                <div className='flex items-center justify-center'>
+                    <h2 className="text-2xl font-semibold text-accent mb-10">
+                        Experience
+                    </h2>
+                </div>
 
 
-            <div className="relative border-l border-white/20">
-                {experiences.map((item, index) => (
-                    <div key={index} className="mb-10 ml-6 group relative">
-                        {/* Dot */}
-                        <span
-                            className="absolute left-0 -translate-x-9 flex h-6 w-6 items-center justify-center rounded-full
+                <div className="relative border-l border-white/20">
+                    {experiences.map((item, index) => (
+                        <div key={index} className="mb-10 ml-6 group relative">
+                            {/* Dot */}
+                            <span
+                                className="absolute left-0 -translate-x-9 flex h-6 w-6 items-center justify-center rounded-full
                             bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
                             transition-all duration-300
                             group-hover:scale-110
                             group-hover:shadow-[0_0_20px_rgba(139,92,246,0.8)]"
-                        />
+                            />
 
-                        {/* Card */}
-                        <div className="bg-secondary/50 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-xl transition">
-                            <h3 className="text-lg font-semibold">
-                                {item.title} · {item.company}
-                            </h3>
-                            <time className="block text-sm text-white/50 mb-2">
-                                {item.date}
-                            </time>
-                            <p className="text-white/70">
-                                {item.description}
-                            </p>
+                            {/* Card */}
+                            <div className="bg-secondary/50 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-xl transition">
+                                <h3 className="text-lg font-semibold">
+                                    {item.title} · {item.company}
+                                </h3>
+                                <time className="block text-sm text-white/50 mb-2">
+                                    {item.date}
+                                </time>
+                                <p className="text-white/70">
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </motion.section>
         </section>
     )
 }

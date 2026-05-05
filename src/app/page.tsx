@@ -5,9 +5,7 @@ import GearLoader from "../components/GearLoader";
 import GithubIcon from "../../public/images/github.svg";
 import LinkedIcon from "../../public/images/linkedin.svg";
 import About from "../sections/about/about";
-import Think from "../sections/think/think";
 import Experience from "../sections/experience/experience";
-import TechGrid from "../../public/images/tech-grid.jpg";
 
 export default function Home() {
   return (
@@ -31,11 +29,10 @@ export default function Home() {
           </Link>
         </div>
       </nav>
-      <div className="relative flex flex-1 items-center justify-center gap-2 py-32 px-6 pt-16 overflow-hidden">
-        {/* Subtle grid */}
-        <div className="absolute inset-0 z-0
-          bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.2),transparent_60%)]"
-        />
+      <div className="relative h-[600px] flex flex-1 items-center justify-center gap-2 py-32 px-6 pt-16 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/graph-pattern.jpg')] bg-repeat bg-[length:500px] opacity-30"></div>
+
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <h1 className="relative z-10 text-6xl flex flex-col sm:flex-row items-center justify-center gap-2 font-semibold tracking-tight">
           <span>Alex</span>
@@ -87,7 +84,6 @@ export default function Home() {
   );
 }
 
-// Add header background to header
+// Create skills section
 // Why does experience add random grey block in front of cards
-// Add projects to projects page
 // Work on first blog
