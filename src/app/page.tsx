@@ -6,6 +6,7 @@ import GithubIcon from "../../public/images/github.svg";
 import LinkedIcon from "../../public/images/linkedin.svg";
 import About from "../sections/about/about";
 import Experience from "../sections/experience/experience";
+import Skills from "../sections/skills/skills";
 
 export default function Home() {
   return (
@@ -80,6 +81,7 @@ export default function Home() {
       </div>
       <About />
       <Experience />
+      <Skills />
     </div>
   );
 }

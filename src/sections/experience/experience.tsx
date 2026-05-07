@@ -56,7 +56,7 @@ export default function experience() {
                             />
 
                             {/* Card */}
-                            <div className="bg-secondary/50 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-xl transition">
+                            <div className="bg-secondary/50 p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-xl transition">
                                 <h3 className="text-lg font-semibold">
                                     {item.title} · {item.company}
                                 </h3>
